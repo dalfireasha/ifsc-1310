@@ -1,5 +1,76 @@
 /* CSS Demo Stylesheet */
+html {
+    box-sizing: border-box
+}
+*,
+*::before,
+*:after {
+    box-sizing: inherit;
+}
 
 body {
-    background-color: aquamarine;
+    background-color: #026773;
+
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    margin:0; /*bleeds color to edges */
+}
+
+main {
+    /*width: 80vw; precentage -vw = viewpoint width
+    max-width: 960px; never get bigger than this
+    background-color: azure;*/
+}
+
+header.primary { /*specifies you want the header with a class of primary, not all headers */
+    background-color: #3ca6a6;
+    color: #f2e3d5; /*type color */
+    text-align: center;
+    text-shadow: 1px 1px #026773; /*x,y color*/
+
+    /* long form for padding - can put in diff values
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px; */
+    /*single value shorthand - if all values the same
+    padding: 40px; */
+    /* T, R, B, L - shorthand for all 4
+    padding: 20px 40px 20px 40px; */
+    /* or 2 value shorthand - first t/b, secon l/r */
+    padding: 20px 40px;    
+
+}
+
+header.primary h1 {
+    font-size: 2.4rem;
+    /* top | left and right | bottom */
+    margin: 20px 0 0;
+}
+
+header.primary h1 a {
+    color:#024959
+    text-decoration:none; /*removes underline from link*/
+}
+
+header.primary h2 {
+    font-size: 1.3rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+nav.primary {}
+
+nav.primary ul{
+    padding: 0; /* removes the padding space from the ul*/ 
+
+}
+nav.primary ul li {
+    list-style-type: none; /*removes bullets if none, can change*/
+    
+}
+nav.primary ul li a{
+    color:antiquewhite;
 }
