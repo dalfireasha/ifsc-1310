@@ -1,4 +1,6 @@
 /* CSS Demo Stylesheet */
+
+/* --------------------Box Sizing-------------------------*/
 html {
     box-sizing: border-box
 }
@@ -6,6 +8,19 @@ html {
 *::before,
 *:after {
     box-sizing: inherit;
+}
+/* --------------------------Utility Classes-----------------------------*/
+.container{
+    width:80vw; /* 80% of viewport*/
+    max width: 960px; /*sets a max width*/
+    margin:40px auto; /*centers the element*/
+}
+
+/*------------------------Responsive Images-----------------------------*/
+/*---put in EVERY style sheet--------------------*/
+
+img{
+    max width:100%; /*never lets the image be bigger than the parent */
 }
 
 body {
@@ -19,7 +34,7 @@ body {
 }
 
 main {
-    /*width: 80vw; precentage -vw = viewpoint width
+    /*width: 80vw; precentage -vw = viewport width - takes up 80 percent of width of page
     max-width: 960px; never get bigger than this
     background-color: azure;*/
 }
@@ -37,15 +52,15 @@ header.primary { /*specifies you want the header with a class of primary, not al
     padding-left: 40px; */
     /*single value shorthand - if all values the same
     padding: 40px; */
-    /* T, R, B, L - shorthand for all 4
+    /* T, R, B, L - shorthand for all 4 (start at top and work clockwise)
     padding: 20px 40px 20px 40px; */
-    /* or 2 value shorthand - first t/b, secon l/r */
+    /* or 2 value shorthand - first t/b, second l/r */
     padding: 20px 40px;    
 
 }
 
 header.primary h1 {
-    font-size: 2.4rem;
+    font-size: 2.4rem; /* relative unit - based on base font size of document when used for text*/
     /* top | left and right | bottom */
     margin: 20px 0 0;
 }
@@ -61,16 +76,135 @@ header.primary h2 {
     letter-spacing: 2px;
 }
 
-nav.primary {}
+nav.primary {
+    
+}
 
 nav.primary ul{
     padding: 0; /* removes the padding space from the ul*/ 
+    display:flex; /* flex box - allows to take child elements of container and put them in a row/column and space them*/
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 960px;
+    margin: 20px auto; /*for this you don't have to hard code on the UL if all stats of the same, you can give the nav a class of container*/
 
 }
 nav.primary ul li {
     list-style-type: none; /*removes bullets if none, can change*/
+    font-size: 0.9rem;
+    text-decoration: none;
+    border: #026773 2px 5px;
+    padding: 7.5px 10px;
+    background-color: #026773;
+    background-color:rgba(47,129,144,.4); /*changes background opacity*/
+    border-radius: 20px /*can do 1, 2, or 4 values to change shape - clockwise from top left corner*/
     
 }
-nav.primary ul li a{
+nav.primary ul li a:hover{ /*changes background when hovering over link */
     color:antiquewhite;
+    background-color:rgba(47, 129, 144, 0.8)
+}
+
+#content {} /*selects items with the id content*/
+
+#content h2{
+    color:#f2e3d5;
+    border-bottom:#f2e3d5 dotted 1px;
+}
+
+#content h3 {
+    color:#f2e3d5;
+    border-left: #f2e3d5 5px solid;
+    padding: 5px 0px 5px 10px;
+}
+
+#blog{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px; /*spaces the elements out */
+    border-top:1px solid #f2e3d5;
+    padding-top: 40px;
+}
+
+#blog article.post{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    transition: 0.5s; 
+}
+
+#blog article.post:hover{
+
+}
+
+figure{
+    margin:0; /*alows image to fill the space */
+}
+
+figcaption, time{ /* can comma separate different selctors*/
+    text-transform:uppercase; /*converts text string to all uppercase . Also lowercase, capitalize (first letter of every word in element)*/
+    font: size 0.6rem;
+    text-align:center;
+    color:antiquewhite;
+}
+
+/* h1,h2,h3,h4,h5,h6{} will target all these at once */
+
+#blog article.post a{ /*targets the "Article Title" link */
+    color:black;
+    text-decoration: none;
+}
+
+aside[role="complementary"]{ /* [] selects the attribure */
+    background-color: #024959;
+    color:antiquewhite;
+    padding:40px 0;
+
+}
+
+aside .container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+/*readmore link to be white, on own line, right aligned*/
+
+aside .container a:last-child{ /*targets only the last element in the block*/
+    color: #ffffff;
+    display:block; /* makes inline element behave like a block*/
+    text-align: right;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:440px){ /* Media Query -changes the properties of what's in {}.applies for anything under the declared pixels*/
+    nav.primary ul {
+        flex-direction: column;
+        gap:10px;
+        max-width: 200px;
+        margin: 20px auto;
+    }
+
+    nav.primary ul li a{
+        display: block; /*helps make link button same size when in this condition*/
+    }
 }
