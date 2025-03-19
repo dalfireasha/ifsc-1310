@@ -16,7 +16,6 @@ img{
 
 body {
     background-color: #026773;
-    color: antiquewhite;
     font-family: "Playwrite IT Moderna", cursive;
     font-optical-sizing: auto;
     font-weight: <weight>;
@@ -24,9 +23,8 @@ body {
     margin:0; 
 }
 
-body h1{
-    color:aqua;
-    text-decoration: underline;
+h1{
+    color:bisque;
 }
 
 header{
@@ -37,10 +35,8 @@ header{
 }
 
 li {
-    color:aqua;
+    color:aquamarine;
 }
-
-
 a{
     color:bisque
 }
@@ -48,4 +44,3 @@ a{
 .assignment{
     margin: 10px 0 auto;
 }
-    

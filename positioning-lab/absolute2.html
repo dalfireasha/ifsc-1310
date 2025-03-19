@@ -67,7 +67,10 @@
       width: 100px;
       height: 100px;
     }
-    #footer {
+    
+    #footer { /* could also use margin with negatives with percents for top and left - however, you have to calculate using the footer dimiensions
+      see here for more: https://css-tricks.com/centering-css-complete-guide/ 
+      the transform function will help auto calculate centering of the box - this is best with %, but can be used with viewport*/
       position:absolute;
       top:150px;
       left: 150px;
@@ -75,6 +78,7 @@
       height: 100px;
       background-color: #666;
     }
+
     h1 {
       color: #000;
       font-weight: normal;
