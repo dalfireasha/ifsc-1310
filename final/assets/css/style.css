@@ -1,0 +1,13 @@
+html {
+    box-sizing: border-box
+}
+*,
+*::before,
+*:after {
+    box-sizing: inherit;
+}
+
+.container{
+    width:80vw; /* 80% of viewport*/
+    max width: 960px; /*sets a max width*/
+    margin:40px auto; /*centers the element*/

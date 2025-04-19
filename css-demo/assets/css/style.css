@@ -19,7 +19,7 @@ html {
     margin:40px auto; /*centers the element*/
 }
 
-.img-right{ /*small imaging resizing is ok i css, but resize in image editor if you need large size changes, 
+.img-right{ /*small imaging resizing is ok in css, but resize in image editor if you need large size changes, 
     this way you don't waste bandwidhth */
     float:right;
     border:#f2e3d5 1px solid;
