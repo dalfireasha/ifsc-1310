@@ -25,7 +25,7 @@ body {
 }
 
 header.primary{
-    background: url(/final/assets/images/free\ pic.jpg);
+    background: url
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
