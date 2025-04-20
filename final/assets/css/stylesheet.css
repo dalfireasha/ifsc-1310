@@ -17,29 +17,51 @@ img{
     max-width:100%; 
 }
 body {
-    background-color: #72c6f7;
+    background-color: #0672E2;
     font-family:"Lora", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: <400>;
     font-style: normal;
+    color: white;
 }
 
 header.primary{
-    background-size: contain;
+    background-color: #B6E1FF;
+    background-image: url(/final/assets/images/free\ pic.jpg);
+    background-position: top left;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: #72c6f7;
+    background-size: 400px;
+    margin-bottom: auto;
 }
 
 header.primary h1 {
     font-size: 2rem; 
-    text-decoration: underline;
-    color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
     margin: 20px 5px 0;
 }
 
 header.primary a{
-    color: cadetblue;
+    color: #0672E2;
+}
+
+nav ul{
+    padding: 0; 
+    display:flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 960px;
+    margin: 20px auto; 
+
+}
+nav ul li {
+    list-style-type: none; 
+    font-size: 1.5rem;
+    text-decoration: none;
+    border:#0672E2 2px 5px;
+    padding: 7.5px 10px;
+    background-color: ##B3E4FF;
+    border-radius: 20px
 }
 
 #links{
@@ -54,6 +76,7 @@ header.primary a{
 }
 #links article.pages{
     flex: 1 1 200px;
+    background-color: #72c6f7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     padding: 10px;
     font-size: 0.8rem;
