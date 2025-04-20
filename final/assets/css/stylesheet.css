@@ -8,16 +8,16 @@ html {
 }
 
 .container{
-    width:80vw; /* 80% of viewport*/
-    max width: 960px; /*sets a max width*/
-    margin:40px auto; /*centers the element*/
+    width:80vw; 
+    max-width: 960px; 
+    margin:40px auto; 
 }
 
 img{
-    max width:100%; 
+    max-width:100%; 
 }
 body {
-    background-color: cadetblue;
+    background-color: #72c6f7;
     font-family:"Lora", serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
@@ -28,7 +28,7 @@ header.primary{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color:#B6E1FF;
+    background-color: #72c6f7;
 }
 
 header.primary h1 {
@@ -46,13 +46,14 @@ header.primary a{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    gap:20px; /*spaces the elements out */
-    border-top:1px solid #f2e3d5; /*puts a border above the blog section */
+    gap:20px; 
+    border-top:1px solid #0672E2; 
     padding-top: 40px;
-    border-bottom:1px solid #f2e3d5;
+    border-bottom:1px solid #0672E2;
     padding: 40px 0;
 }
 #links article.pages{
+    flex: 1 1 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     padding: 10px;
     font-size: 0.8rem;
