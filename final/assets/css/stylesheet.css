@@ -6,3 +6,39 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+.container{
+    width:80vw; /* 80% of viewport*/
+    max width: 960px; /*sets a max width*/
+    margin:40px auto; /*centers the element*/
+}
+
+img{
+    max width:100%; 
+}
+body {
+    background-color: cadetblue;
+    font-family:"Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+header.primary{
+    background: url(/final/assets/images/free\ pic.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#B6E1FF;
+}
+
+header.primary h1 {
+    font-size: 2rem; 
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    margin: 20px 5px 0;
+}
+
+header.primary a{
+    color: cadetblue;
+}
