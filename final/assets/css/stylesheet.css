@@ -37,7 +37,7 @@ header.primary{
 header.primary h1 {
     font-size: 2rem; 
     text-align: center;
-    color: white;
+    color:#0672E2;
     margin: 20px 5px 0;
 }
 
@@ -45,23 +45,34 @@ header.primary a{
     color: #0672E2;
 }
 
-nav ul{
+nav.primary ul {
     padding: 0; 
-    display:flex; 
+    display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
     max-width: 960px;
     margin: 20px auto; 
-
 }
-nav ul li {
+
+nav.primary ul li {
     list-style-type: none; 
+}
+
+nav.primary ul li a {
+    display: inline-block;
     font-size: 1.5rem;
-    text-decoration: none;
-    border:#0672E2 2px 5px;
-    padding: 7.5px 10px;
-    background-color: ##B3E4FF;
-    border-radius: 20px
+    text-decoration: underline;
+    color: #0672E2;
+    padding: 7.5px 15px;
+    background-color: #B3E4FF; /* remove the extra # */
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+nav.primary ul li a:hover {
+    background-color: #72c6f7; /* lighter blue on hover */
+    color: #fff; /* optional: white text on hover */
 }
 
 #links{
