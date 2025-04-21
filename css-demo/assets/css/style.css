@@ -191,7 +191,7 @@ figcaption, time{ /* can comma separate different selctors*/
     text-decoration: none;
 }
 
-aside[role="complementary"]{ /* [] selects the attribure */
+aside[role="complementary"]{ /* [] selects the attribute */
     background-color: #024959;
     color:antiquewhite;
     padding:40px 0;
