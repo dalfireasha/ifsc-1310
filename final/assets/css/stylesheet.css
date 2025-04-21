@@ -72,10 +72,10 @@ ul.custom-bullets {
     list-style-image: url(/final/assets/images/bulletsmall.png);
 }
 
-/* Hover effect */
+
 nav.primary ul li a:hover {
-    background-color: #72c6f7; /* lighter blue on hover */
-    color: #fff; /* optional: white text on hover */
+    background-color: #72c6f7; 
+    color: #fff; /
 }
 
 #links{
@@ -97,3 +97,20 @@ nav.primary ul li a:hover {
     border-radius: 4px;
     transition: 0.5s; 
 }
+
+footer {
+    background-color: #B6E1FF;
+    padding: 20px;
+    text-align: center;
+    color: #0672E2;
+    font-size: 1.5rem; 
+  }
+
+footer a{
+    text-decoration: underline;
+    color: #0672E2;
+}
+
+footer a:hover {
+    background-color: #72c6f7; 
+    color: #fff; /
