@@ -128,7 +128,6 @@ article.pages a {
     padding-top: 40px;
     border-bottom:1px solid #0672E2;
     padding: 40px 0;
-    flex-wrap: wrap;
 }
 #links article.pages{
     flex: 1 1 200px;
@@ -155,17 +154,17 @@ footer a{
 
 footer a:hover {
     background-color: #72c6f7; 
-    color: #fff; /
+    color: #fff; 
+}
 
 @media (max-width: 768px) {
-
     #links {
-        flex-direction: column; /* Stack articles vertically */
-          align-items: center; /* Center the articles */
-        }
-      
-        #links article.pages {
-          flex: 1 1 100%; /* Each article takes up full width on mobile */
-          margin-bottom: 20px; /* Space between stacked articles */
-        }
-      }
+      flex-direction: column; /* Stack articles vertically */
+      align-items: center; /* Center the articles */
+    }
+  
+    #links article.pages {
+      flex: 1 1 100%; 
+      margin-bottom: 20px; 
+    }
+  }
