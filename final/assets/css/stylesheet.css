@@ -34,8 +34,8 @@ header.primary {
     height: 200px; 
     margin-bottom: auto;
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center;     /* Centers content vertically */
+    justify-content: center;
+    align-items: center;  
 }
 
 header.primary h1 {
@@ -148,6 +148,9 @@ h2 {
     font-size: 2rem;
     text-decoration: underline;
 }
+p{
+    font-size: 1.3rem;
+}
 
 article.pages a {
   font-size: clamp(1rem, 5vw, 2rem);
@@ -195,12 +198,101 @@ div.post-content {
     font-style: italic;
 }
 
+h3 {
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    background-color: #B6E1FF;
+  }
+  
+  .vacsmatter {
+    max-width: 300px;
+    height: auto;
+    flex-shrink: 0; 
+    border-radius: 8px;
+  }
+  
+  .vacs-text {
+    flex: 1; 
+  }
+  
+  .vacs-text h2 {
+    margin-top: 0;
+  }
+  
+  .vacs-text p {
+    line-height: 1.6;
+    font-size: 1.4rem;
+    color:#0672E2
+  }
+
+  #myths {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px; 
+    border-top:1px solid #0672E2; 
+    padding-top: 40px;
+    border-bottom:1px solid #0672E2;
+    padding: 40px 0;
+}
+
+#myths article.myth{
+    flex: 1 1 200px;
+    background-color: #72c6f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    transition: 0.5s; 
+}
+.myth h4 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.myth p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white
+}
+
+.myth details {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.myth details summary {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 footer {
+    background-image: url(/final/assets/images/free\ pic.jpg);
     background-color: #B6E1FF;
     padding: 20px;
     text-align: center;
     color: #0672E2;
     font-size: 1.5rem; 
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    height: 200px; 
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
   }
 
 footer a{
