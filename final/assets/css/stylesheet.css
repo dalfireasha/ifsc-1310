@@ -17,7 +17,7 @@ img{
     max-width:100%; 
 }
 body {
-    background-color: #0672E2;
+    background-color: #0052AD;
     font-family:"Lora", serif;
     font-optical-sizing: auto;
     font-weight: <400>;
@@ -67,6 +67,9 @@ nav.primary ul li a {
     background-color: #B3E4FF; /* remove the extra # */
     border-radius: 20px;
     transition: background-color 0.3s ease;
+}
+ul.custom-bullets {
+    list-style-image: url(/final/assets/images/bulletsmall.png);
 }
 
 /* Hover effect */
