@@ -109,7 +109,6 @@ nav.primary ul li a:hover {
     list-style-type: none;
   }
   
-  
   #sidebar ul li a {
     font-size: 1.5rem;
     text-decoration: none;
@@ -129,10 +128,6 @@ ul.custom-bullets {
     list-style-image: url(/final/assets/images/bulletsmall.png);
 }
 
-h2 {
-    font-size: 2rem;
-}
-
 a {
     display: inline-block;
     font-size: 1rem;
@@ -147,6 +142,11 @@ a {
 a:hover {
     background-color: #72c6f7;
     color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
 }
 
 article.pages a {
@@ -169,7 +169,6 @@ article.pages img {
   height: auto;
 }
 
-  
 #links{
     display:flex;
     flex-direction: row;
@@ -180,6 +179,7 @@ article.pages img {
     border-bottom:1px solid #0672E2;
     padding: 40px 0;
 }
+
 #links article.pages{
     flex: 1 1 200px;
     background-color: #72c6f7;
@@ -188,6 +188,11 @@ article.pages img {
     font-size: 0.8rem;
     border-radius: 4px;
     transition: 0.5s; 
+}
+
+div.post-content {
+    font-size: 1.1rem;
+    font-style: italic;
 }
 
 footer {
