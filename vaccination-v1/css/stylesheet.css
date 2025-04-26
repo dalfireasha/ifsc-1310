@@ -1,0 +1,155 @@
+html {
+    box-sizing: border-box
+}
+*,
+*::before,
+*:after {
+    box-sizing: inherit;
+}
+
+.container{
+    width:80vw; 
+    max-width: 960px; 
+    margin:40px auto; 
+}
+
+img{
+    max-width:100%; 
+}
+body {
+    background-color: #0052AD;
+    font-family:"Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: <400>;
+    font-style: normal;
+    color: white;
+}
+
+header.primary {
+    background-color: #B6E1FF;
+    background-image: url(/vaccination-final/assets/images/free\ pic.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    height: 200px; 
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header.primary h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #0672E2;
+
+}
+
+header.primary a{
+    color: #0672E2;
+}
+
+nav.primary ul {
+    padding: 0; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 960px;
+    margin: 20px auto; 
+}
+
+nav.primary ul li {
+    list-style-type: none; 
+}
+
+nav.primary ul li a {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: #0672E2;
+    padding: 7.5px 15px;
+    background-color: #B3E4FF; 
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav.primary ul li a:hover {
+    background-color: #72c6f7; 
+    color: #fff; 
+}
+
+ul.custom-bullets {
+    list-style-image: url(/vaccination-final/assets/images/bulletsmall.png);
+}
+
+a {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #0672E2;
+    padding: 7.5px 15px;
+    background-color: #B3E4FF;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #72c6f7;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+p{
+    font-size: 1.3rem;
+}
+
+article.pages a {
+  font-size: clamp(1rem, 5vw, 2rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+article.pages figure {
+  text-align: center;
+  margin: 0;
+}
+
+article.pages img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#links {
+    display: flex;
+    flex-wrap: wrap; /* lets them wrap on smaller screens */
+    gap: 20px; /* space between articles */
+    justify-content: space-between; /* distributes them evenly */
+}
+
+.pages {
+    flex: 1 1 30%; /* grow, shrink, basis — roughly 3 per row */
+    max-width: 30%; /* keeps it from stretching too far */
+    min-height: 400px; /* or whatever height you want */
+    background-color: #ffffff22; /* optional for visibility */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pages h2 a {
+    display: inline; /* prevents block-level stretching */
+    font-size: 1.25rem; /* adjust size to your liking */
+    padding: 0;
+    background: none;
+    color: white;
+    text-decoration: underline;
+}
