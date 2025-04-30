@@ -84,10 +84,10 @@ ul.custom-bullets {
 
 a {
     display: inline-block;
-    font-size: 1rem;
+    font-size: .8rem;
     text-decoration: underline;
     color: #0672E2;
-    padding: 7.5px 15px;
+    /*padding: 7.5px 15px; */
     background-color: #B3E4FF;
     border-radius: 20px;
     transition: background-color 0.3s ease;
@@ -128,16 +128,16 @@ article.pages img {
 
 #links {
     display: flex;
-    flex-wrap: wrap; /* lets them wrap on smaller screens */
-    gap: 20px; /* space between articles */
-    justify-content: space-between; /* distributes them evenly */
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between; 
 }
 
 .pages {
-    flex: 1 1 30%; /* grow, shrink, basis — roughly 3 per row */
-    max-width: 30%; /* keeps it from stretching too far */
-    min-height: 400px; /* or whatever height you want */
-    background-color: #ffffff22; /* optional for visibility */
+    flex: 1 1 30%; 
+    max-width: 30%; 
+    min-height: 400px; 
+    background-color: #ffffff22;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -146,8 +146,8 @@ article.pages img {
 }
 
 .pages h2 a {
-    display: inline; /* prevents block-level stretching */
-    font-size: 1.25rem; /* adjust size to your liking */
+    display: inline; 
+    font-size: 1.25rem; 
     padding: 0;
     background: none;
     color: white;
