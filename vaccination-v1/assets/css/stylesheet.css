@@ -107,7 +107,7 @@ p{
 }
 
 article.pages a {
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: 0.9rem
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
