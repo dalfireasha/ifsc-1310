@@ -82,14 +82,14 @@ ul.custom-bullets {
     list-style-image: url(/vaccination-final/assets/images/bulletsmall.png);
 }
 
-a {
+li a {
     display: inline-block;
     font-size: .8rem;
     text-decoration: underline;
     color: #0672E2;
     /*padding: 7.5px 15px; */
     background-color: #B3E4FF;
-    border-radius: 20px;
+    border-radius: 2px;
     transition: background-color 0.3s ease;
 }
 
