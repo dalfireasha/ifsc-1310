@@ -45,6 +45,10 @@ header.primary h1 {
 
 }
 
+nav.primary {
+  margin-left: 250px; /* Adjust to move nav right, away from image */
+}
+
 header.primary a{
   color: #0672E2;
 }
