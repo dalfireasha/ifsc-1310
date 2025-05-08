@@ -55,42 +55,54 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center; 
-  gap: 10px; 
+  gap: 20px; 
 }
 nav.primary {
   margin-left: 250px;
 }
 
 nav.primary ul {
-  padding: 0; 
-  display: flex; 
+  padding: 0;
+  display: flex;
   flex-direction: row;
   max-width: 960px;
-  margin: 20px auto; 
+  margin: 20px auto;
   justify-content: space-around;
+  list-style: none;
 }
 
-nav.primary ul a {
-  display: flex;
-  font-size: 1.5rem;
+nav.primary ul li {
+  position: relative;
+}
+
+nav.primary ul li a {
+  font-size: 1.3rem;
   text-decoration: underline;
   color: #0672E2;
-  justify-content: space-evenly;
   padding: 7px 12px;
-  background-color: #B3E4FF; 
+  background-color: #B3E4FF;
   border-radius: 15px;
   transition: background-color 0.3s ease;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
 
 nav.primary ul li a:hover {
-  background-color: #72c6f7; 
-  color: #fff; 
+  background-color: #72c6f7;
+  color: #fff;
+  background-image: url('/vaccination-final/assets/images/bulletsmall.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  padding-left: 25px;
+  z-index: 1;
 }
 
-ul {
+.custom-bullet li{
   list-style-image: url('/vaccination-final/assets/images/bulletsmall.png');
-
 }
+
 
 img {
   display: block;
