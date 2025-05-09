@@ -91,7 +91,7 @@ nav.primary ul li a {
 nav.primary ul li a:hover {
   background-color: #72c6f7;
   color: #fff;
-  background-image: url('/vaccination-final/assets/images/bulletsmall.png');
+  background-image: url('assets/images/bulletsmall.png');
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 10px 10px;
@@ -100,7 +100,7 @@ nav.primary ul li a:hover {
 }
 
 .custom-bullet li{
-  list-style-image: url('/vaccination-final/assets/images/bulletsmall.png');
+  list-style-image: url('assets/images/bulletsmall.png');
 }
 
 
