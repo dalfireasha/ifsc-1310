@@ -206,7 +206,7 @@ footer a:active {
   color: #72c6f7; 
 }
 
-@media screen and (max-width:700px){  
+/*@media screen and (max-width:700px){  
     nav.primary ul {
         flex-direction: column;
         gap:10px;
@@ -217,4 +217,4 @@ footer a:active {
     nav.primary ul li a{
         display: block; 
     }
-}
+}*/
