@@ -24,7 +24,6 @@ body {
 }
 
 header.primary {
-  width: 100%;
   background-color: rgba(114, 198, 247, 0.5);
   background-position: top left;
   background-repeat: no-repeat;
@@ -33,8 +32,9 @@ header.primary {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
-
+  justify-content: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 header.primary h1 {
@@ -206,31 +206,13 @@ footer a:active {
   color: #72c6f7; 
 }
 
-@media screen and (max-width: 700px) {
-  header.primary {
-    width: 100vw;
-    margin: 0;
-    padding: 20px 0; 
-    box-sizing: border-box;
-  }
-
+@media (max-width: 768px) {
   nav.primary ul {
     flex-direction: column;
     gap: 10px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
   }
 
-  nav.primary {
-    padding: 0;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  nav.primary ul li a {
-    display: block;
-    text-align: center;
+  header.primary {
+    height: auto;
   }
 }
-
