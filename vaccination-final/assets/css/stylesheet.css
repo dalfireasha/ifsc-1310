@@ -25,7 +25,6 @@ body {
 
 header.primary {
   background-color: rgba(114, 198, 247, 0.5);
-  background-image: url('assets/images/free pic.jpg');
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -57,7 +56,6 @@ nav.primary {
 nav.primary ul {
   display: flex;
   gap: 20px;
-  list-style: none;
   margin: 0;
   padding: 0;
   max-width: 1200px;
@@ -67,7 +65,7 @@ nav.primary ul {
 }
 
 nav.primary ul li {
-  background-image: url('assets/images/bulletsmall.png');
+  list-style: none;
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 12px 12px;
@@ -91,10 +89,13 @@ nav.primary ul li a:visited {
 
 nav.primary ul li a:hover {
   color: #B3E4FF;
+  background: url('vaccination-final/assets/images/bulletsmall.png') no-repeat left center;
+  background-size: 12px 12px;
+  padding-left: 25px;
 }
 
 .custom-bullet li{
-  list-style-image: url('assets/images/bulletsmall.png');
+  list-style-image: url('/vaccination-final/assets/images/bulletsmall.png');
 }
 
 
