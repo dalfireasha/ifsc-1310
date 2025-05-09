@@ -206,11 +206,11 @@ footer a:active {
   color: #72c6f7; 
 }
 
-@media screen and (max-width:440px){  pixels*/
+@media screen and (max-width:700px){  
     nav.primary ul {
         flex-direction: column;
         gap:10px;
-        max-width: 200px;
+        max-width: 400px;
         margin: 20px auto;
     }
 
