@@ -206,3 +206,14 @@ footer a:hover {
 footer a:active {
   color: #72c6f7; 
 }
+
+@media (max-width: 768px) {
+  nav.primary ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header.primary {
+    height: auto;
+  }
+}
