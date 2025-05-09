@@ -208,20 +208,16 @@ footer a:active {
   color: #72c6f7; 
 }
 
-@media (max-width: 768px) {
-  nav.primary ul {
-    flex-direction: column;
-    gap: 10px;
-  }
+@media screen and (max-width:440px){ 
 
-  nav.primary ul li a {
-    width: 100%;
-    box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    nav.primary ul {
+        flex-direction: column;
+        gap:10px;
+        max-width: 200px;
+        margin: 20px auto;
+    }
 
-  header.primary {
-    height: auto;
-  }
+    nav.primary ul li a{
+        display: block; 
+    }
 }
