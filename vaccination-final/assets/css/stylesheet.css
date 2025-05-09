@@ -89,13 +89,13 @@ nav.primary ul li a:visited {
 
 nav.primary ul li a:hover {
   color: #B3E4FF;
-  background: url('/vaccination-final/assets/images/bulletsmall.png') no-repeat left center; 
+  background: url('assets/images/bulletsmall.png') no-repeat left center; 
   background-size: 20px 20px;
   padding-left: 25px;
 }
 
 .custom-bullet li{
-  list-style-image: url('/vaccination-final/assets/images/bulletsmall.png');
+  list-style-image: url('assets/images/bulletsmall.png');
 }
 
 
