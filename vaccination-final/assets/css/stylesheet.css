@@ -24,79 +24,73 @@ body {
 }
 
 header.primary {
-  background-color: #B6E1FF;
-  background-image: url("assets/images/free pic.jpg");
+  background-color: rgba(114, 198, 247, 0.5);
+  background-image: url('assets/images/free pic.jpg');
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: contain; 
-  height: 200px; 
-  margin-bottom: auto;
+  background-size: contain;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  justify-content: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 header.primary h1 {
   font-size: 2rem;
   text-align: center;
-  color: #0672E2;
-  display:inline-block
-  position: absolute;
-  top: 0;
-  left: 20%;  
-  transform: translateX(10%);
+  color: white;
   margin: 0;
-  font-size: 2rem; 
-  text-align: center; 
+  padding-bottom: 10px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; 
-  gap: 20px; 
-}
 nav.primary {
-  margin-left: 250px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 nav.primary ul {
-  padding: 0;
   display: flex;
-  flex-direction: row;
-  max-width: 960px;
-  margin: 20px auto;
-  justify-content: space-around;
+  gap: 20px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav.primary ul li {
-  position: relative;
+  background-image: url('assets/images/bulletsmall.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 12px 12px;
+  padding-left: 20px;
 }
 
 nav.primary ul li a {
   font-size: 1.3rem;
   text-decoration: underline;
-  color: #0672E2;
-  padding: 7px 12px;
-  background-color: #B3E4FF;
-  border-radius: 15px;
-  transition: background-color 0.3s ease;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 20px;
   display: inline-block;
   position: relative;
   z-index: 1;
 }
 
+nav.primary ul li a:visited {
+  color: white;
+}
+
 nav.primary ul li a:hover {
-  background-color: #72c6f7;
-  color: #fff;
-  background-image: url('assets/images/bulletsmall.png');
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 10px 10px;
-  padding-left: 25px;
-  z-index: 1;
+  color: #B3E4FF;
 }
 
 .custom-bullet li{
