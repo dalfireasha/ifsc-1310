@@ -207,22 +207,21 @@ footer a:active {
 }
 
 @media screen and (max-width: 700px) {
-  /* Adjust navigation list */
+
   nav.primary ul {
     flex-direction: column;
     gap: 10px;
-    margin: 20px; /* Add margin to create space on the edges */
-    padding-left: 20px; /* Add padding inside the list */
-    padding-right: 20px; /* Add padding inside the list */
+    margin: 20px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
   }
 
   nav.primary ul li a {
     display: block;
   }
 
-  /* Make sure header spans full width */
   header.primary {
-    width: 100%; /* Ensure it takes full width of the viewport */
+    width: 100%; 
     margin: 0;
     padding-left: 0;
     padding-right: 0;
